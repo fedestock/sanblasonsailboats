@@ -438,4 +438,115 @@
   color: #f7d34a;
 }
 
+.about-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+.about-hero h1 {
+  font-family: "raleway";
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  padding-top: 55px;
+}
+.about-hero p {
+  font-family: "nunito sans";
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.bio-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+}
+.bio-card article {
+  text-align: center;
+}
+.bio-card h3 {
+  font-family: "caveat";
+  font-size: 21px;
+}
+.bio-card h2 {
+  font-family: "raleway";
+  font-size: 34px;
+}
+
+.letschat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  font-family: "raleway";
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #519CAB;
+}
+
+.description {
+  font-family: "nunito sans";
+  line-height: 26px;
+  font-size: 16px;
+  margin-top: 1rem;
+  color: #20373B;
+}
+
+.subscriber {
+  margin-top: 55px;
+}
+
+.form div {
+  display: flex;
+  max-width: 28rem;
+  margin-top: 1rem;
+  column-gap: 0.5rem;
+}
+
+.form div input {
+  outline: none;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 0.875rem;
+  border: 1px solid rgba(253, 253, 253, 0.363);
+  border-radius: 0.375rem;
+  flex: 1 1 auto;
+}
+
+.form div input::placeholder {
+  color: rgb(216, 212, 212);
+}
+
+.form div input:focus {
+  border: 1px solid rgb(99, 102, 241);
+}
+
+.form div button {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.625rem 0.875rem;
+  background-color: #20373B;
+  border-radius: 0.375rem;
+  border: none;
+  outline: none;
+}
+
+.subscriber {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=main.css.map */
