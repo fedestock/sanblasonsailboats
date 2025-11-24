@@ -1,0 +1,63 @@
+// Boton especial
+@mixin xp-button(
+  $width: 9em,
+  $height: 3em,
+  $radius: 30em,
+  $font-size: 15px,
+  $shadow1: 6px 6px 12px #c5c5c5,
+  $shadow2: -6px -6px 12px #ffffff,
+  $gradient-start: #C3E7F1,
+  $gradient-end: #519CAB,
+  $transition: .5s ease
+) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    font-size: $font-size;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: $shadow1, $shadow2;
+    align-self: center;
+
+    &::before {
+        content: '';
+        width: 0;
+        height: $height;
+        border-radius: $radius;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, $gradient-start 0%, $gradient-end 100%);
+        transition: $transition;
+        display: block;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        width: $width;
+    }
+}
+
+// tarjetas
+@mixin neo-card(
+  $margin: 16px,
+  $padding: 16px,
+  $radius: 30px,
+  $background: #e0e0e0,
+  $shadow1: 15px 15px 30px #bebebe,
+  $shadow2: -15px -15px 30px #ffffff,
+  $width: calc(100vh - 16px)
+) {
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    height: inherit;
+    border-radius: $radius;
+    background: $background;
+    box-shadow: $shadow1, $shadow2;
+    text-align: center;
+}
