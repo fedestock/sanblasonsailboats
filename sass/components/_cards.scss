@@ -1,0 +1,66 @@
+// cards
+@use "../utilities/variables" as *; // Asumiendo que tienes variables
+
+.tarjeta {
+    // Estilos del Bloque (Contenedor principal)
+    margin: 16px;
+    padding: 16px;
+    width: calc(100vh - margin); // (16px de margen izq + 16px de margen der)
+    height: inherit;
+    border-radius: 30px; // 30px
+    background: white; // #e0e0e0
+    // Estilo Neumorphism (Shadow)
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    text-align: center;
+
+    // 2. Elementos anidados (Siguiendo la estructura BEM: .card__img)
+
+    // Estilos para la imagen (podrías llamarla .card__img en HTML)
+    & img {
+        width: 100%;
+        border-radius: 16px; // 16px
+    }
+
+    // Estilos para el encabezado (podrías llamarlo .card__title en HTML)
+    & h2 {
+        font-size: 34px;
+        font-weight: 700;
+        margin-top: 16px; // 16px
+    }
+}
+
+.tarjeta-fullbg {
+    // --- Estilos del Bloque Base (Contenedor) ---
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    width: calc(100% - (16px * 2));
+    max-width: 400px;
+    height: 350px;
+    border-radius: 21px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    margin-bottom: 16px;
+
+    // NOTA: La imagen de fondo DEBE ser definida en HTML o un Modificador.
+    // Aquí solo ponemos los estilos de control del fondo, no la URL.
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // --- Pseudo-Elemento: Degradado (Aplica a todas las tarjetas) ---
+&::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 100%);
+}
+}

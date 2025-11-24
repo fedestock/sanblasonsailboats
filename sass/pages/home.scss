@@ -1,0 +1,397 @@
+// variables
+@use "../utilities/variables" as *;
+// componentes
+@use "../components/buttons" as *;
+@use "../components/cards" as *;
+
+
+// header
+.navbar {
+    font-family: "raleway";
+    font-weight: 500;
+    color: $ocean;
+    margin: 16px;
+    width: calc(100% - 32px);
+    padding: 5px 16px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+
+    /* blur */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(76, 70, 57, 0.2);
+
+    /* sticky */
+    position: fixed;
+    z-index: 1000;
+
+    /* Logo */
+    .navbar-brand img {
+        width: 111px;
+    }
+
+    /* Toggle */
+    .navbar-toggler {
+        border: none;
+
+        &:focus,
+        &:focus-visible,
+        &:active {
+            box-shadow: none;
+        }
+
+    }
+
+    /* Reemplazar íconos */
+    .navbar-toggler-icon {
+        background-image: url("../img/menu-scale.svg");
+    }
+
+    .open .navbar-toggler-icon {
+        background-image: url("../img/menu-close.svg");
+    }
+}
+
+// hero styles
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    /* video BG */
+    .hero__videobg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .hero__videobg iframe {
+        position: absolute;
+        width: 120vw;
+        height: 120vh;
+        pointer-events: none;
+    }
+
+    .hero__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.2));
+        z-index: 2;
+    }
+
+    /* Contenido sobre el video */
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        color: white;
+        text-align: center;
+        padding: 16px;
+
+        h1 {
+            font-family: "raleway";
+            font-size: 55px;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        p {
+            font-family: "nunito sans";
+            font-size: 21px;
+            line-height: 34px;
+        }
+    }
+}
+
+.experiences {
+    padding: 55px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: "raleway";
+        color: $ocean;
+        font-size: 34px;
+        line-height: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: "raleway";
+        color: white;
+        font-size: 34px;
+        line-height: 41px;
+        font-weight: 700;
+        text-align: center;
+        z-index: 2;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: $ocean;
+
+    }
+
+    .tarjeta-fullbg p {
+        font-size: 21px;
+        text-align: center;
+        color: white;
+        z-index: 2;
+    }
+
+    .tarjeta-fullbg--captain {
+        background-image: url(../img/trekking-sanblas-on-sailboats.jpg);
+        background-size: cover;
+    }
+
+
+    .tarjeta-fullbg--yatch {
+        background-image: url(../img/dinnerboat-sanblasonsailboats.jpg);
+        background-size: cover;
+    }
+
+    .tarjeta-fullbg--experiences {
+        background-image: url(../img/snorkeling-sanblasonsailboats.jpg);
+        background-size: cover;
+    }
+
+    .tarjeta-fullbg--island {
+        background-image: url(../img/friends-archipielago-sanblas-on-sailboats.jpg);
+        background-size: cover;
+    }
+}
+
+
+// interes
+.interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 55px;
+
+    h2 {
+        font-family: "raleway";
+        color: $ocean;
+        font-size: 34px;
+        line-height: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .flex-tags {
+        padding: 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+
+        .tagsa {
+            display: inline-flex;
+            background-color: $sky;
+            color: $ocean;
+            font-weight: 500;
+            border-radius: 16px;
+            border: $ocean 2px solid;
+            padding: 3px 7px;
+
+        }
+
+        .tagsi {
+            display: inline-flex;
+            background-color: rgba($sky, 0.5);
+            color: $ocean;
+            font-weight: 500;
+            border-radius: 16px;
+            border: $ocean 2px solid;
+            padding: 3px 7px;
+        }
+    }
+}
+
+// destination seccion
+.destination {
+    h2 {
+        font-family: "raleway";
+        color: $ocean;
+        font-size: 21px;
+        line-height: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .carousel-overlay {
+        p {
+            text-align: center;
+        }
+    }
+
+    div.carousel-indicators {
+        display: none;
+    }
+}
+
+/* testimonial */
+.testimonial-card {
+    width: 100%;
+    min-height: 25vh;
+    background: #ffffff;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+}
+
+// testimonial
+.container.my-5 {
+    h2 {
+        font-family: "raleway";
+        color: $ocean;
+        font-size: 34px;
+        line-height: 55px;
+        font-weight: 700;
+        text-align: left;
+    }
+}
+
+.container.my-5.gallery {
+    padding: 0;
+    margin: 0;
+}
+
+// galeria en loop
+.tira-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.tira {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 25s linear infinite;
+}
+
+.tira img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/* Animación infinita */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+// Footer
+.footer {
+    padding: 16px;
+    width: 100vw;
+    height: inherit;
+    border-radius: 30px 30px 0 0;
+    background: linear-gradient(135deg, white, #e8e5e5);
+
+    // Estilo Neumorphism (Shadow)
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    text-align: center;
+
+    .ftblock-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        h4 {
+            font-family: "raleway";
+            font-weight: 700;
+            color: $ocean;
+        }
+
+        nav ul {
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            font-family: "nunito sans";
+            color: $ocre;
+            text-decoration: none;
+        }
+    }
+
+    .divone img {
+        width: 150px;
+    }
+
+    .divone p {
+        width: 85vw;
+    }
+
+    .divthree {
+
+        padding-top: 16px;
+    }
+
+    .ftblock-bottom {
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    a,
+    a:visited,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: inherit; // usa el color definido en i
+        outline: none;
+    }
+}
+
+.ft-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+    i {
+        font-size: 26px;
+        color: #1ec48c;
+        transition: .3s ease;
+
+        &:hover {
+            color: #f7d34a;
+        }
+    }
+}

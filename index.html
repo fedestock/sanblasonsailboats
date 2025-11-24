@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- simple icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@8.3.0/font/simple-icons.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>San Blas on Sailboats</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/sanblasonsailboats-logo.png"
+                        alt="sanblasonsailboats-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- hero -->
+    <main>
+
+        <div class="hero">
+            <div class="hero__videobg">
+                <iframe
+                    src="https://www.youtube.com/embed/F1LHwYkB7eE?autoplay=1&mute=1&loop=1&playlist=F1LHwYkB7eE&controls=0&showinfo=0&modestbranding=1"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="hero__content">
+                <h3>Experience the Real San Blas</h3>
+                <h1>Sail with the Guna People</h1>
+                <p>Authentic sailing adventures guided by the community, not the industry.</p>
+                <div class="btn-div">
+                    <button class="btn-div__btn btn-div__btn--primary">
+                        Meet experiences
+                    </button>
+                    <button class="btn-div__btn btn-div__btn--secondary">
+                        Talk to captain
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__overlay"></div>
+
+    </main>
+
+    <!-- benefits -->
+    <section class="experiences">
+        <h2>Why Sail With Us?</h2>
+        <p>Authentic sailing esperiences, let's connect with Guna Yala culture in the nature of San Blas.</p>
+
+        <!-- tarjeta uno -->
+        <div class="tarjeta-fullbg tarjeta-fullbg--captain">
+            <h3>Guna Yala Experts</h3>
+            <p>Travel with a crew who knows every hidden spot.</p>
+        </div>
+
+        <!-- tarjeta dos -->
+        <div class="tarjeta-fullbg tarjeta-fullbg--yatch">
+            <h3>Fully Equipped Yacht</h3>
+            <p>Cabins, private bathrooms, fresh meals.</p>
+        </div>
+
+        <!-- tarjeta tres -->
+        <div class="tarjeta-fullbg tarjeta-fullbg--experiences">
+            <h3>All-Inclusive Experiences</h3>
+            <p>Meals, snorkeling gear, paddleboards, island visits.</p>
+        </div>
+
+        <!-- tarjeta cuatro-->
+        <div class="tarjeta-fullbg tarjeta-fullbg--island">
+            <h3>Multi-day Island Hopping</h3>
+            <p>Visit remote islands unreachable by tours.</p>
+        </div>
+    </section>
+
+
+    <!-- interes -->
+    <section class="interest">
+        <h2>Meet Your Sailboat</h2>
+
+        <!-- slider -->
+        <div id="yachtSlider" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#yachtSlider" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ladylou-sanblasonsailboats.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/dinnerboat-sanblasonsailboats.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/innerboat-sanblasonsailboats.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+
+            <!-- Flechas -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#yachtSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#yachtSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="flex-tags">
+            <p class="tagsi">Private cabins</p>
+            <p class="tagsa">Bathroom</p>
+            <p class="tagsi">Solar power</p>
+            <p class="tagsa">Snorkeling equipment</p>
+            <p class="tagsa">Dinghy</p>
+            <p class="tagsi">Kitchen & chef</p>
+        </div>
+        <button class="btn--accent">See Full Yacht Info</button>
+    </section>
+
+    <!-- experiencias -->
+    <section class="experiences">
+        <h2>Conoce nuestras experiencias</h2>
+
+        <!-- tarjeta uno -->
+        <div class="tarjeta">
+            <img src="./img/velerotemp.jpg" alt="velero">
+            <h2>Private Adventure</h2>
+            <p>Ideal for couples or families.</p>
+            <button class="btn--accent">Book here</button>
+        </div>
+
+        <!-- tarjeta dos -->
+        <div class="tarjeta">
+            <img src="./img/couple-sailing-sanblas-on-sailboats.jpg" alt="couple-sailing">
+            <h2>Friends & Chill Package</h2>
+            <p>Perfect for groups up to 6.</p>
+            <button class="btn--accent">Book here</button>
+        </div>
+
+        <!-- tarjeta tres -->
+        <div class="tarjeta">
+            <img src="./img/ladylou-sanblasonsailboats.jpg" alt="ladyyou-sail">
+            <h2>Sail & Jungle Experience</h2>
+            <p>Sailing + rainforest trek.</p>
+            <button class="btn--accent">Book here</button>
+        </div>
+    </section>
+
+
+
+    <!-- testimonial -->
+    <section class="container my-5">
+        <h2>Reseñas de Google</h2>
+
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana Martínez</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">"Excelente experiencia, súper profesional."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlos López</h5>
+                        <p class="text-warning">★★★★☆</p>
+                        <p class="card-text">"Muy buen servicio y atención personalizada."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucía Fernández</h5>
+                        <p class="text-warning">★★★★★</p>
+                        <p class="card-text">"Recomendadísimo. Volveré sin dudas."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- galeria en loop -->
+    <section class="container my-5 gallery">
+        <div class="tira-wrapper">
+            <div class="tira">
+                <img src="/img/captains-san-blas-sailing-sailboats.jpg" alt="img1">
+                <img src="/img/couple-kayak-sanblas-on-sailboats.jpg" alt="img2">
+                <img src="/img/couple-sailing-sanblas-on-sailboats.jpg" alt="img3">
+                <img src="img/dinnerboat-sanblasonsailboats.jpg" alt="img4">
+                <img src="img/fishing-sanblas-on-sailboats.jpg" alt="img5">
+                <img src="img/friends-archipielago-sanblas-on-sailboats.jpg" alt="img1">
+                <img src="img/friends-river-forest-sanblas-on-sailboats.jpg" alt="img2">
+                <img src="img/friends-snorkel-sanblas-on-sailboats.jpg" alt="img3">
+                <img src="img/friends-jumping-river-sanblas-on-sailboats.jpg" alt="img4">
+                <img src="img/friends-snorkeling-sanblas-on-sailboats.jpg" alt="img5">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class="ftblock-top">
+
+            <div class="divone">
+                <img src="./img/sanblasonsailboats-logo.png" alt="logo">
+                <p>More than a boat, we are a community united by a passion for San Blas, eco-friendly living, and ocean
+                    exploration.</p>
+            </div>
+
+            <div class="divtwo">
+                <h4>Experiences</h4>
+                <nav>
+                    <ul>
+                        <li><a href="">Private Adventure</a></li>
+                        <li><a href="">Friends & Chill</a></li>
+                        <li><a href="">Sail & Jungle Adventure</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="divthree">
+                <h4>Legal</h4>
+                <nav>
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="ft-social container text-center" style="margin-top: 2rem;">
+            <a href="https://facebook.com" class="social-items">
+                <i class="si si-facebook"></i>
+            </a>
+
+            <a href="https://instagram.com"">
+            <i class=" si si-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/XXXXXXXXXX">
+                <i class="si si-whatsapp"></i>
+            </a>
+
+            <a href="https://youtube.com">
+                <i class="si si-airbnb"></i>
+            </a>
+        </div>
+
+        <div class="ftblock-bottom">
+            <hr>
+            <p>©2025 | San Blas on Sailboats</p>
+        </div>
+
+    </footer>
+
+    <!-- bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- toogle de bs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggler = document.querySelector('.navbar-toggler');
+            const collapse = document.querySelector('#navbarNav');
+
+            // alterna la clase .open cuando el menú se abre o se cierra
+            collapse.addEventListener('show.bs.collapse', () => {
+                toggler.classList.add('open');
+            });
+
+            collapse.addEventListener('hide.bs.collapse', () => {
+                toggler.classList.remove('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
