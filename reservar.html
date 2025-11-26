@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reservar - Mi Experiencia</title>
+
+  <!-- Flatpickr CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; max-width: 800px; margin: auto; }
+    .card { border: 1px solid #e0e0e0; padding: 18px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.04); }
+    label { display:block; margin-top:10px; font-weight:600; }
+    input[type="text"] { width:100%; padding:8px; border-radius:6px; border:1px solid #ccc; }
+    .row { display:flex; gap:12px; align-items:center; margin-top:12px; }
+    .btn { background:#0d6efd; color:#fff; padding:10px 14px; border-radius:6px; border:none; cursor:pointer; }
+    .btn[disabled]{ opacity:.6; cursor:not-allowed; }
+    .info { margin-top:10px; color:#555; font-size:0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Reservar</h1>
+
+  <div class="card">
+    <div id="tituloExp" style="font-size:1.25rem; font-weight:700;">Experiencia</div>
+    <div class="info">Seleccioná la fecha para tu experiencia y luego continuá al pago.</div>
+
+    <label for="fecha">Fecha</label>
+    <input id="fecha" type="text" placeholder="Seleccioná una fecha" readonly />
+
+    <label for="personas">Personas (opcional)</label>
+    <input id="personas" type="number" min="1" value="1" />
+
+    <div class="row">
+      <button id="btnPagar" class="btn">Pagar y reservar</button>
+      <div id="status" style="margin-left:10px;color:#333"></div>
+    </div>
+  </div>
+
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <!-- Tu JS -->
+  <script src="reservar.js"></script>
+</body>
+</html>
