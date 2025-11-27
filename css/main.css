@@ -28,7 +28,12 @@
 }
 
 .btn--accent {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: inline;
+  color: #20373B;
   height: 3em;
   border-radius: 30em;
   font-size: 18px;
