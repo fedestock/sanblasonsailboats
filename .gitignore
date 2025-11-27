@@ -1,0 +1,5 @@
+config.php
+respuestas.json
+data/reservas.json
+/vendor
+/.env
