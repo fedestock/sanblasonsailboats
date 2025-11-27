@@ -28,8 +28,8 @@ $data = [
         ],
         "quantity" => 1
     ]],
-    "success_url" => "http://localhost:8000/success.html",
-    "cancel_url"  => "http://localhost:8000/reservar.html?exp=" . urlencode($experiencia),
+   "success_url" => "https://sbosb.kidcoding.site/success.html",
+"cancel_url"  => "https://sbosb.kidcoding.site/reservar.html?exp=" . urlencode($experiencia),
     "metadata" => [
         "fecha" => $fecha,
         "experiencia" => $experiencia,

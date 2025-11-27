@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     try {
       // Llamamos al backend para crear la sesión de Stripe
-      const res = await fetch('/create-checkout.php', {
+      const res = await fetch("https://sbosb.kidcoding.site/create-checkout.php", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
